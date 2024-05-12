@@ -12,15 +12,14 @@ git init
 
 git add .
 
-git commit -m "first commit"
+git commit -m "final commit"
 
 git branch -M main
 
 git remote add origin https://github.com/ldotor99/RetoBanistmo.git
 
-git push -u 
+git push --set-upstream origin main
 
-origin main
 
 
 
