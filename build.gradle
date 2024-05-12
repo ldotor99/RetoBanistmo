@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:4.1.10")
+    }
+}
+
+plugins {
+    id("java")
+}
+
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+group 'org.example'
+
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '4.1.10'
+    testImplementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '4.1.10'
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '4.1.10'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '4.1.10'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '4.1.10'
+    testImplementation group: 'net.serenity-bdd', name: 'serenity-ensure', version: '4.0.0'
+    testImplementation("io.github.bonigarcia:webdrivermanager:5.8.0")
+}
